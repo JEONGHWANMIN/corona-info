@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Auth, NavBoxWrapper, NavMenu } from "./Nav.styled";
 import { ImHome } from "react-icons/im";
-
+import { MdDashboard } from "react-icons/md";
+import { AiOutlineComment } from "react-icons/ai";
 function index() {
 	return (
 		<>
@@ -14,18 +15,25 @@ function index() {
 					<li>
 						<h3>
 							<Link to={"/"}>
-								<ImHome /> Home
+								<ImHome />
+								&nbsp;Home
 							</Link>
 						</h3>
 					</li>
 					<li>
 						<h3>
-							<Link to={"/chart"}>DashBoard</Link>
+							<Link to={"/dashboard"}>
+								<MdDashboard />
+								&nbsp;DashBoard
+							</Link>
 						</h3>
 					</li>
 					<li>
 						<h3>
-							<Link to={"/comunity"}>Community</Link>
+							<Link to={"/comunity"}>
+								<AiOutlineComment />
+								&nbsp;Community
+							</Link>
 						</h3>
 					</li>
 				</NavMenu>
